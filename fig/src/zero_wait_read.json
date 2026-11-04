@@ -1,0 +1,52 @@
+{
+  "signal": [
+    {
+      "name": "clk",
+      "wave": "p.....",
+      "node": "..a."
+    },
+    {
+      "name": "reg_req",
+      "wave": "0100.."
+    },
+    {
+      "name": "reg_sel",
+      "wave": "0100.."
+    },
+    {
+      "name": "reg_write",
+      "wave": "0.0..."
+    },
+    {
+      "name": "reg_addr",
+      "wave": "x2x...",
+      "data": [
+        "0x37"
+      ]
+    },
+    {
+      "name": "reg_ready",
+      "wave": "0100.."
+    },
+    {
+      "name": "reg_error",
+      "wave": "0....."
+    },
+    {
+      "name": "reg_rdata",
+      "wave": "x23...",
+      "data": [
+        "上次读数",
+        "0x80"
+      ],
+      "node": "..cd"
+    }
+  ],
+  "edge": [
+    "a~>c 完成沿发布",
+    "c~d 采样窗口 N+1"
+  ],
+  "config": {
+    "hscale": 2
+  }
+}

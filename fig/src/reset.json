@@ -1,0 +1,47 @@
+{
+  "signal": [
+    {
+      "name": "clk",
+      "wave": "p......"
+    },
+    {
+      "name": "rst_n",
+      "wave": "00.1..",
+      "node": "..a"
+    },
+    {
+      "name": "reg_req",
+      "wave": "0...1.",
+      "node": "....b"
+    },
+    {
+      "name": "reg_sel",
+      "wave": "0...1."
+    },
+    {
+      "name": "reg_write",
+      "wave": "0...0."
+    },
+    {
+      "name": "reg_ready",
+      "wave": "0...1."
+    },
+    {
+      "name": "reg_error",
+      "wave": "0....."
+    },
+    {
+      "name": "reg_rdata",
+      "wave": "0.....",
+      "data": [
+        "0x00"
+      ]
+    }
+  ],
+  "edge": [
+    "a~>b 释放后最早可发请求"
+  ],
+  "config": {
+    "hscale": 2
+  }
+}

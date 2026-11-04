@@ -1,0 +1,52 @@
+{
+  "signal": [
+    {
+      "name": "clk",
+      "wave": "p....",
+      "node": "..a"
+    },
+    {
+      "name": "reg_req",
+      "wave": "0100.",
+      "node": ".b"
+    },
+    {
+      "name": "reg_sel",
+      "wave": "0100."
+    },
+    {
+      "name": "reg_write",
+      "wave": "0.0.."
+    },
+    {
+      "name": "reg_addr",
+      "wave": "x2x..",
+      "data": [
+        "0x9C"
+      ]
+    },
+    {
+      "name": "reg_ready",
+      "wave": "0100."
+    },
+    {
+      "name": "reg_error",
+      "wave": "0100.",
+      "node": ".c"
+    },
+    {
+      "name": "reg_rdata",
+      "wave": "x=...",
+      "data": [
+        "无更新"
+      ]
+    }
+  ],
+  "edge": [
+    "a~>b 完成沿",
+    "b~>c reg_error 随 reg_ready 同拍生效"
+  ],
+  "config": {
+    "hscale": 2
+  }
+}

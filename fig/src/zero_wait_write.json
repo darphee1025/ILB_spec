@@ -1,0 +1,50 @@
+{
+  "signal": [
+    {
+      "name": "clk",
+      "wave": "p....",
+      "node": "..a"
+    },
+    {
+      "name": "reg_req",
+      "wave": "0100.",
+      "node": ".b"
+    },
+    {
+      "name": "reg_sel",
+      "wave": "0100."
+    },
+    {
+      "name": "reg_write",
+      "wave": "0100."
+    },
+    {
+      "name": "reg_addr",
+      "wave": "x2x..",
+      "data": [
+        "0x4E"
+      ]
+    },
+    {
+      "name": "reg_wdata",
+      "wave": "x2x..",
+      "data": [
+        "0xA5"
+      ]
+    },
+    {
+      "name": "reg_ready",
+      "wave": "0100."
+    },
+    {
+      "name": "reg_error",
+      "wave": "0...."
+    }
+  ],
+  "edge": [
+    "a~>b 完成沿，写入生效"
+  ],
+  "config": {
+    "hscale": 2
+  }
+}

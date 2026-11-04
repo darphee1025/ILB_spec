@@ -1,0 +1,43 @@
+{
+  "signal": [
+    {
+      "name": "clk",
+      "wave": "p......"
+    },
+    {
+      "name": "reg_req",
+      "wave": "01010.."
+    },
+    {
+      "name": "reg_sel",
+      "wave": "01010.."
+    },
+    {
+      "name": "reg_write",
+      "wave": "0.0.0.."
+    },
+    {
+      "name": "reg_addr",
+      "wave": "x2x3x..",
+      "data": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "name": "reg_ready",
+      "wave": "01010.."
+    },
+    {
+      "name": "reg_rdata",
+      "wave": "xx=3...",
+      "data": [
+        "A 数据",
+        "B 数据"
+      ]
+    }
+  ],
+  "config": {
+    "hscale": 2
+  }
+}
